@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Fabio 2172014">
+    <title>Soal 1</title>
+</head>
+<body>
+    <script>
+        let m = prompt("Berapa Mawar Yang Ingin Dibeli(5000)"); 
+        let t = prompt("Berapa Tulip Yang Ingin Dibeli(8000)"); 
+        let a = prompt("Berapa Anggrek Yang Ingin Dibeli(10000)");
+        let uang = prompt("Uang Yang Dibayarkan Adalah");
+        let hm = m*5000;
+        let ht = t*8000;
+        let ha = a*10000;
+        let hrg = hm+ht+ha;
+        let ttl = uang - (hm+ht+ha);
+        document.write("Anda Membeli Mawar sebanyak <b>" + m + " bunga </b> dengan harga total Rp." + hm + "<br>");
+        document.write("Anda Membeli Tulip sebanyak <b>" + t + " bunga </b> dengan harga total Rp." + ht + "<br>");
+        document.write("Anda Membeli Anggrek sebanyak <b>" + a + " bunga </b> dengan harga total Rp." + ha + "<br>");
+        document.write("Total belanjaan Anda <b> Rp." + hrg + "</b> <br><br>" )
+        if (uang>hrg) {
+            document.write( "Kembalian Anda adalah" + ttl )
+        }
+        else {
+            document.write( "Uang Anda tidak mencukupi!" )
+        }
+    </script>
+</body>
+</html>

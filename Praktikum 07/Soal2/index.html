@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Fabio 2172014">
+    <title>Soal 2</title>
+</head>
+<body>
+    <script>
+        let hb = prompt("Berapa harga belanjaan Anda?");
+        let ua = prompt("Berapa uang yang dibayar?");
+        let hasil = ua - hb ;
+        document.write("Harga belanjaan Anda adalah Rp." + hb + 
+        "<br> Uang yang dibayarkan adalah Rp." + ua + 
+        "<br><br> kembalian Anda adalah Rp." + hasil + "dengan rincian sebagai berikut: <br>")
+        if (hasil>100000) {
+            let srts = Math.floor (hasil/100000);
+            document.write("Uang 100000 sebanyak" + srts + "lembar <br>")
+            hasil = hasil-(srts*100000)
+        }
+        if (hasil>50000) {
+            let lp = Math.floor (hasil/50000);
+            document.write("Uang 100000 sebanyak" + lp + "lembar <br>")
+            hasil = hasil-(lp*50000)
+        }
+        if (hasil>20000) {
+            let dp = Math.floor (hasil/20000);
+            document.write("Uang 100000 sebanyak" + dp + "lembar <br>")
+            hasil = hasil-(dp*20000)
+        }
+        if (hasil>10000) {
+            let sp = Math.floor (hasil/10000);
+            document.write("Uang 100000 sebanyak" + sp + "lembar <br>")
+            hasil = hasil-(sp*10000)
+        }
+        if (hasil>5000) {
+            let lr = Math.floor (hasil/5000);
+            document.write("Uang 100000 sebanyak" + lr + "lembar <br>")
+            hasil = hasil-(lr*5000)
+        }
+        if (hasil>2000) {
+            let dr = Math.floor (hasil/2000);
+            document.write("Uang 100000 sebanyak" + dr + "lembar <br>")
+            hasil = hasil-(dr*2000)
+        }
+        if (hasil>1000) {
+            let sr = Math.floor (hasil/1000);
+            document.write("Uang 1000 sebanyak" + sr + "lembar <br>") 
+            hasil = hasil-(sr*1000)
+        }
+        if (hasil>500) {
+            let limrts = Math.floor (hasil/500);
+            document.write("Uang 500 sebanyak" + limrts + "lembar <br>") 
+            hasil = hasil-(limrts*500)
+        }
+        if ((hasil>0) && (hasil<500)){
+            document.write("Sisa Kembalian Rp." + hasil)
+        }
+    </script>
+</body>
+</html>
